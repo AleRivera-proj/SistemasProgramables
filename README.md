@@ -1,7 +1,7 @@
-# SistemasProgramablesProyecto
+# SistemasProgramables
 Segundo intento de creación de repositorio para el proyecto final de la materia de Sistemas Programables 12:10 - 1:50
 
-# PLayBracelete
+# PlayBracelete
 
 El PlayBracelete abre un abanico amplio de posibilidades al transformar ejercicios terapéuticos repetitivos en dinámicas de juego interactivo (gamificación) y evaluación médica.
 
