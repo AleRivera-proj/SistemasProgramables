@@ -7,13 +7,22 @@ if(!global.keyboard_debug){
 	if (tipo_evento == network_type_data) {
     
 	    // Extraemos el buffer (la memoria cruda que nos llegó)
-	    var buffer_entrante = async_load[? "buffer"];
+	    var buffer = async_load[? "buffer"];
     
-	    // IMPORTANTE: Usamos buffer_text porque Node.js envía texto crudo sin terminador nulo
-	    var mensaje = buffer_read(buffer_entrante, buffer_text);
+	    var json_string = buffer_read(buffer, buffer_text);
     
-	    show_debug_message("Dato recibido de ESP32: " + mensaje);
-    
+	    try {
+	        var datos = json_parse(json_string);
+			
+	        if (variable_struct_exists(datos, "inclinacion")) {
+	            global.giroX = datos.inclinacion;
+	        }
+	    } 
+	    catch (e) {
+	        show_debug_message("Error leyendo el JSON de Node.js: " + string(e));
+	    }
+		
+		/*
 	    // Cambiamos nuestra variable global según el mensaje recibido
 	    if (mensaje == "PRESIONADO") {
 	        global.boton_esp_presionado = true;
@@ -37,6 +46,6 @@ if(!global.keyboard_debug){
 	        } catch(error) {
 	            show_debug_message("Error leyendo JSON del sensor: " + string(error));
 	        }
-	    }
+	    }*/
 	}
 }

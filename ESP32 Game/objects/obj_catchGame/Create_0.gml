@@ -8,6 +8,8 @@
 
 state = 0;
 
-apple_frec = 60*4;
+apple_frec = 60*2;
 apple_speed = 2;
-spawn_width = 32*5;
+spawn_width = 32*8;
+
+spawn_timer = 120;

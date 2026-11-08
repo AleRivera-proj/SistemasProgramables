@@ -11,6 +11,4 @@ if (servidor < 0) {
 }
 
 // Esta variable la usarás en tu juego para saber si el botón está presionado o no
-global.boton_esp_presionado = false;
-global.joystick_x = 0;
-global.joystick_y = 0;
+global.giroX = 0;
