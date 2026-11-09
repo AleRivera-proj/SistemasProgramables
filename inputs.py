@@ -10,11 +10,11 @@ i2c = I2C(0, scl=Pin(22), sda=Pin(21),freq=400000)
 mpu = MPU6050(i2c)
 
 # --- 1. CONFIGURACIÓN DE RED ---
-SSID = "Moka&GizmoHouse"
-PASSWORD = "jasaso05"
+SSID = "ProfesoresTecNM-UF"
+PASSWORD = "T3cNML30n@2024$."
 
 # --- 2. CONFIGURACIÓN MQTT (Broker Mosquitto) ---
-MQTT_BROKER = "192.168.68.118" 
+MQTT_BROKER = "192.168.200.159" 
 MQTT_USER = "admin"
 MQTT_PASSWORD = "MiClave2026"
 MQTT_TOPIC = b"juego/controles/"
