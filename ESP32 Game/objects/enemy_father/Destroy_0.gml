@@ -1,0 +1,1 @@
+grant_points(10);

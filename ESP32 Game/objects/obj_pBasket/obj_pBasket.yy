@@ -9,8 +9,8 @@
   "name":"obj_pBasket",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Catch",
+    "path":"folders/Objects/Catch.yy",
   },
   "parentObjectId":null,
   "persistent":false,
