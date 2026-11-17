@@ -12,3 +12,11 @@ function grant_points(amount){
 	var _txt = layer_text_get_id("UIBoard","score_text");
 	layer_text_text(_txt,global.g2_points);
 }
+
+///@param {real} dmg
+function damage_city(dmg){
+	var _spr = layer_sprite_get_id("UIBoard","spr_health");
+	var _hp = -15.5*(spaceWars_game.city_hp/100);
+	layer_sprite_yscale(_spr,_hp);
+	instance_create_layer(0,0,"Instances",obj_flashEffect);
+}

@@ -1,1 +1,1 @@
-instance_destroy();
+if(!inv) instance_destroy();

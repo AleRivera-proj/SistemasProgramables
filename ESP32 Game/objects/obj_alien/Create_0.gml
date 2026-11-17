@@ -1,4 +1,4 @@
 event_inherited();
 
 ehp = 1;
-espeed = 0.5;
+espeed = 0.4;

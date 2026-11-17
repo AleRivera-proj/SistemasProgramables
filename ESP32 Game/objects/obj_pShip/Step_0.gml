@@ -2,7 +2,7 @@ var _in = global.inputs;
 var _c = sprite_width/2;
 
 x += (_in.right - _in.left)*walksp;
-y += _in.down - _in.up;
+y += (_in.down - _in.up)*walksp;
 
 x = clamp(x,_c+32*6,room_width-_c-32*5);
 y = clamp(y,_c,room_height-_c-64);
