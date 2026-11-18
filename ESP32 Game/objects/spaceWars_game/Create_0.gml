@@ -20,4 +20,4 @@ city_hp_max = city_hp;
 */
 
 state = 0;
-gm_cont = 60*5;
+gm_cont = 60*2;

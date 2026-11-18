@@ -12,8 +12,8 @@ switch(state){
 	
 			if (_rand <= 60) _sp = obj_alien;
 			else if(_rand <= 70) _sp = obj_alien_reverse; 
-			else if(_rand <= 80)_sp = obj_alien_speedie;
-			else if(_rand <= 95)_sp = obj_waver;
+			else if(_rand <= 75)_sp = obj_alien_speedie;
+			else if(_rand <= 85)_sp = obj_waver;
 			else _sp = obj_alien_shooter;
 	
 			var _y = _sp == obj_alien_reverse ? room_height + 32: -32;
@@ -28,3 +28,5 @@ switch(state){
 	break;
 	default: break;
 }
+
+city_hp = clamp(city_hp,0,city_hp_max);

@@ -1,3 +1,3 @@
 defeated = false;
 points = 10;
-dmg = 5;
+dmg = 10;
