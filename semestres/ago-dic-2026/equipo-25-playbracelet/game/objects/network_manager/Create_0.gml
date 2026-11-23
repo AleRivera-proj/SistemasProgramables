@@ -12,3 +12,4 @@ if (servidor < 0) {
 
 // Esta variable la usarás en tu juego para saber si el botón está presionado o no
 global.giroX = 0;
+global.flex1 = 0;
