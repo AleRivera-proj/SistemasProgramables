@@ -1,0 +1,10 @@
+class Configuracion:
+    def __init__(self, ssid="ProfesoresTecNM-UF", password="T3cNML30n@2024$.", pc_ip = "192.168.200.135", pc_port = 6510):
+        self.ssid = ssid
+        self.password = password
+        self.pc_ip = pc_ip
+        self.pc_port = pc_port
+
+# Creas el objeto ya listo con sus valores predefinidos
+ajustes = Configuracion()
+

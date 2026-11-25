@@ -12,7 +12,8 @@ if (socket_id == servidor && tipo_evento == network_type_data) {
     
     try {
         var datos = json_parse(json_texto);
-        
+        show_debug_message("\x1b[1A\x1b[2K" + string(datos));
+		
         if (variable_struct_exists(datos, "inclinacion")) {
             global.giroX = datos.inclinacion;
         }

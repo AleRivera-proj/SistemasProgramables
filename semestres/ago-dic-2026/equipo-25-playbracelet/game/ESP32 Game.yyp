@@ -24,7 +24,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.1.0.27",
+    "IDEVersion":"2026.1.1.34",
   },
   "name":"ESP32 Game",
   "resources":[
@@ -79,8 +79,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_setup","path":"rooms/rm_setup/rm_setup.yy",},},
-    {"roomId":{"name":"rm_game1","path":"rooms/rm_game1/rm_game1.yy",},},
     {"roomId":{"name":"rm_game2","path":"rooms/rm_game2/rm_game2.yy",},},
+    {"roomId":{"name":"rm_game1","path":"rooms/rm_game1/rm_game1.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "templateType":"game",
